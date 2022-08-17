@@ -1,9 +1,9 @@
 import './css/Calculator.css';
 
-import React from 'react';
-import PropTypes from 'prop-types';
+import { Component } from 'react';
+import CalcKey from './CalcKey';
 
-export default class Calculator extends React.Component {
+class Calculator extends Component {
   constructor(props) {
     super(props);
     this.state = { result: 0 };
@@ -38,14 +38,4 @@ export default class Calculator extends React.Component {
   }
 }
 
-function CalcKey({ keyClass, label, colored }) {
-  const colorClass = colored ? ' colored' : '';
-  return <button className={`key ${keyClass}${colorClass}`} type="button">{label}</button>;
-}
-
-CalcKey.propTypes = {
-  keyClass: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
-  colored: PropTypes.bool,
-};
-CalcKey.defaultProps = { colored: false };
+export default Calculator;
