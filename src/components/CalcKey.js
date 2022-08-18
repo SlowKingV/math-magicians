@@ -1,24 +1,13 @@
-import { Component } from 'react';
 import PropTypes from 'prop-types';
 
-class CalcKey extends Component {
-  constructor(props) {
-    super(props);
-    this.handleKeyClick = this.handleKeyClick.bind(this);
-    this.state = {};
-  }
+const CalcKey = ({
+  keyClass, label, handleKeyClick, colored,
+}) => {
+  const clickHandler = () => { handleKeyClick(label); };
+  const colorClass = colored ? ' colored' : '';
 
-  handleKeyClick() {
-    const { label, handleKeyClick } = this.props;
-    handleKeyClick(label);
-  }
-
-  render() {
-    const { keyClass, label, colored } = this.props;
-    const colorClass = colored ? ' colored' : '';
-    return <button className={`key ${keyClass}${colorClass}`} type="button" onClick={this.handleKeyClick}>{label}</button>;
-  }
-}
+  return <button className={`key ${keyClass}${colorClass}`} type="button" onClick={clickHandler}>{label}</button>;
+};
 
 CalcKey.propTypes = {
   keyClass: PropTypes.string.isRequired,
