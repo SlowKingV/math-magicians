@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import './css/Navigation.css';
 
 const links = [
   { id: 1, title: 'Home', path: '/' },
@@ -9,12 +10,12 @@ const links = [
 const Navigation = () => {
   console.log('Nav rendered');
   return (
-    <nav>
+    <nav className="navBar">
       <h1>Math Magicians</h1>
-      <ul>
+      <ul className="navList">
         {links.map((link) => (
-          <li key={link.id}>
-            <NavLink to={link.path} end>
+          <li key={link.id} className="navItem">
+            <NavLink to={link.path} className="navLink" end>
               {link.title}
             </NavLink>
           </li>

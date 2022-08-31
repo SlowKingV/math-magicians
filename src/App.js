@@ -5,11 +5,13 @@ import Calculator from './pages/Calculator';
 import Quote from './pages/Quote';
 
 const App = () => (
-  <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="calculator" element={<Calculator />} />
-    <Route path="quote" element={<Quote />} />
-  </Routes>
+  <div className="app">
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="calculator" element={<Calculator />} />
+      <Route path="quote" element={<Quote />} />
+    </Routes>
+  </div>
 );
 
 export default App;
