@@ -42,7 +42,7 @@ let data = {
   operation: null,
 };
 
-const Calculator = () => {
+const CalculatorApp = () => {
   const [{ display, prev, operation }, setDisplay] = useState({ display: '0', prev: null, operation: null });
 
   const handleKeyClick = (keyLabel) => {
@@ -76,4 +76,4 @@ const Calculator = () => {
   );
 };
 
-export default Calculator;
+export default CalculatorApp;
