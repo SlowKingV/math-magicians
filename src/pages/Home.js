@@ -3,16 +3,12 @@ const paragraphs = [
   'Quidem perspiciatis modi ea atque, debitis facilis cupiditate voluptas quasi vitae. Perferendis nam illo libero ullam exercitationem inventore provident deserunt sit dolorem numquam eaque, veniam iure. Dignissimos commodi tempore numquam totam deleniti, dolores perferendis, eveniet quo dicta molestias cupiditate corrupti reprehenderit unde optio veritatis quas fugit tempora asperiores repellat ex. Veniam eum, voluptatibus sunt similique in consectetur praesentium amet facere debitis quaerat minima neque corporis quidem impedit. Quam ad, veniam saepe atque laudantium dolores itaque culpa facere nam rem modi. Sequi illo, quisquam culpa atque quod, rerum quis laudantium aspernatur officia repellat veniam accusamus possimus? Debitis ratione neque repudiandae doloribus.',
 ];
 
-const Home = () => {
-  console.log('Home page');
-
-  return (
-    <div>
-      <h2>Welcome to our page!</h2>
-      <p>{paragraphs[0]}</p>
-      <p>{paragraphs[1]}</p>
-    </div>
-  );
-};
+const Home = () => (
+  <div>
+    <h2>Welcome to our page!</h2>
+    <p>{paragraphs[0]}</p>
+    <p>{paragraphs[1]}</p>
+  </div>
+);
 
 export default Home;

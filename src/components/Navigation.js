@@ -7,22 +7,19 @@ const links = [
   { id: 3, title: 'Quote', path: 'quote' },
 ];
 
-const Navigation = () => {
-  console.log('Nav rendered');
-  return (
-    <nav className="navBar">
-      <h1>Math Magicians</h1>
-      <ul className="navList">
-        {links.map((link) => (
-          <li key={link.id} className="navItem">
-            <NavLink to={link.path} className="navLink" end>
-              {link.title}
-            </NavLink>
-          </li>
-        ))}
-      </ul>
-    </nav>
-  );
-};
+const Navigation = () => (
+  <nav className="navBar">
+    <h1>Math Magicians</h1>
+    <ul className="navList">
+      {links.map((link) => (
+        <li key={link.id} className="navItem">
+          <NavLink to={link.path} className="navLink" end>
+            {link.title}
+          </NavLink>
+        </li>
+      ))}
+    </ul>
+  </nav>
+);
 
 export default Navigation;
