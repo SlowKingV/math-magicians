@@ -1,4 +1,4 @@
-import './css/Calculator.css';
+import './css/CalculatorApp.css';
 
 import { useState } from 'react';
 import CalcKey from './CalcKey';

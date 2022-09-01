@@ -1,9 +1,10 @@
+import './css/Quote.css';
 import QuoteElement from '../components/QuoteElement';
 
 const Quote = () => {
   console.log('Quote page');
   return (
-    <div>
+    <div className="quoteContainer">
       <QuoteElement />
     </div>
   );

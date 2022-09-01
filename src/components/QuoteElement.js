@@ -9,7 +9,19 @@ const QuoteElement = () => {
     return () => { setQuote({}); };
   }, []);
 
-  return <em>{quote.content ? `"${quote.content}" —${quote.author}` : ''}</em>;
+  return (
+    <>
+      <em>
+        &ldquo;
+        {quote.content || ''}
+        &rdquo;
+      </em>
+      <span>
+        &mdash;
+        {quote.author || ''}
+      </span>
+    </>
+  );
 };
 
 export default QuoteElement;

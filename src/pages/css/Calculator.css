@@ -1,0 +1,30 @@
+.calcComponent {
+  display: flex;
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    'Courier New',
+    monospace;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.left {
+  color: var(--em-font-color);
+  font-size: 3em;
+  max-width: 50%;
+}
+
+@media screen and (max-width: 500px) {
+  .calcComponent {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .left {
+    font-size: 2em;
+    max-width: unset;
+  }
+}
