@@ -1,0 +1,11 @@
+.quoteContainer {
+  color: var(--em-font-color);
+  font-family: 'Edu SA Beginner', cursive;
+  font-size: 2.5em;
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+.quoteContainer span {
+  margin-left: 1em;
+}
